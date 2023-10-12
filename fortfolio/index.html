@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="contaner">
+        <nav class="nav">
+          <h1>Port<span class="span_color">folio</span></h1>
+          <div class="nav_bar" id="nav_links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Sevices</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="menu_bar" id="menu_toggle">
+            <span class="material-symbols-outlined" id="menu_size"> menu </span>
+          </div>
+        </nav>
+      </div>
+      <div class="text_box">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Hammad</span><br />Khan From Pakistan</h1>
+      </div>
+    </div>
+    <!-- about sec -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+
+          <div class="about_col_1">
+            <img src="img/myper.png" alt="" />
+          </div>
+
+          <div class="about_col_2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              Hello! This is Hammad, and I'm a software developer. Talking about
+              my experience, I have been working as a software developer for the
+              past one year. During that time, I've successfully built over a
+              dozen websites, including notable projects like Amazon.com,
+              NoonApp, and my personal portfolio. Apart from this, I have also
+              contributed to various other projects. <br /><br />
+
+              I am excited about taking on new challenges and expanding my skill
+              set. My experience has taught me the importance of staying
+              up-to-date with the latest industry trends and technologies. I am
+              committed to delivering high quality software that not only meets
+              client expectations but also contributes positively to the user
+              experience.
+            </p>
+            <div class="tab-title">
+              <div class="tab-links active-link"id="skills" onclick="opentab('skills')">
+                Skills
+              </div>
+
+              <div class="tab-links"id="experience"onclick="opentab('experience')">
+                Experience
+              </div>
+
+              <div class="tab-links" id="education" onclick="opentab('education')">
+                Education
+              </div>
+            </div>
+
+
+            <div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                  <li><span>Web Development</span><br />Web App Development</li>
+                  <li><span>Web Designer</span><br />Web App Designed</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2022-Current</span><br />UI/UX Design Training At IT
+                    Institude
+                  </li>
+                  <li>
+                    <span>2018-2019</span><br />UI/UX Development Training At
+                    Institude
+                  </li>
+                  <li>
+                    <span>2020-2021</span><br />Internship at software House
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2020</span><br />Metric At Liaquat Memorial School
+                  </li>
+                  <li><span>2023</span><br />Inter At Govt.Collage For Men</li>
+                  <li><span>2023</span><br />Pursuing At Virtual University</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!--Col_2 end-->
+        
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
