@@ -12,17 +12,17 @@
     <script src="https://kit.fontawesome.com/01bfefd4d9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <div class="contaner">
         <nav class="nav">
           <h1>Port<span class="span_color">folio</span></h1>
           <div class="nav_bar" id="nav_links">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Sevices</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Projects</a></li>
+              <li><a href="#portfolio">Sevices</a></li>
+              <li><a href="#contect">Contact us</a></li>
             </ul>
           </div>
           <div class="menu_bar" id="menu_toggle">
@@ -32,7 +32,7 @@
       </div>
       <div class="text_box">
         <p>UI/UX Designer</p>
-        <h1>Hi, I'm <span>Hammad</span><br/>Khan From Pakistan</h1>
+        <h1><span>Hi</span>, I'm<br>Muhammad <br>Noor<span> -E- </span>Nazar<br> From<span> Karachi</span> Pakistan</h1>
       </div>
     </div>
     <!-- about sec -->
@@ -136,30 +136,24 @@
           <div>
             <i class="fa-solid fa-code"></i>
             <h2>Web-Developer</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
+            <p>
+              As a web developer, I craft responsive websites and web applications with a focus on user experience and functionality.
             </p>
             <a href="#">see more</a>
           </div>
           <div>
             <i class="fa-solid fa-code-compare"></i>
-            <h2>UI/UX Design</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
+            <h2>UI/UX Designed</h2>
+            <p>
+              Specializing in UI/UX design, I create visually appealing and intuitive digital experiences that drive user engagement and satisfaction.
             </p>
             <a href="#">see more</a>
           </div>
           <div>
             <i class="fa-brands fa-app-store-ios"></i>
             <h2>Web-Designed</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Aliquid quibusdam excepturi veritatis!Lore
+            <p>
+              Although I have a basic understanding of Photoshop, my primary expertise is in web design, where I focus on creating visually pleasing and functional websites
             </p>
             <a href="#">see more</a>
           </div>
@@ -178,31 +172,31 @@
         <div class="work-list">
 
           <div class="work">
-            <img src="img/myper.png" alt="#">
+            <img src="img/work-img6.avif" alt="#">
             <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.
-                Lorem ipsum dolor sit amet consectetur.
+              <h3>Social-Media Web App</h3>
+              <p>
+                I specialize in social media app design, ensuring intuitive interfaces and engaging user experiences that enhance your platform's appeal and user engagement.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work"> 
+            <img src="img/work-img3.avif" alt="#">
+            <div class="layer">
+              <h3>Massaging Web App</h3>
+              <p>
+                In messaging website design, I focus on intuitive interfaces and robust features to provide a smooth and enjoyable platform for communication.
               </p>
               <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="img/myper.png" alt="#">
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="img/myper.png" alt="#">
+            <img src="img/work-img1.avif" alt="#">
              <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.
-                Lorem ipsum dolor sit amet consectetur.
+              <h3>E-commerce Web App</h3>
+              <p>
+                In E-commerce website design, I specialize in creating visually appealing, user-friendly online stores with a focus on conversion optimization and a secure shopping experience.
               </p>
               <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
@@ -219,8 +213,8 @@
         <div class="row">
           <div class="contect-left">
             <h1 class="sub-title">Contect me</h1>
-            <p><i class="fas fa-paper-plane"></i> noor.nazar.programmer@gmail.com</p>
-            <p><i class="fa-brands fa-whatsapp"></i>+92 3178813001</p>
+            <p> <i class="fas fa-paper-plane" > </i>  noor.nazar.programmer@gmail.com</p>
+            <p> <i class="fa-brands fa-whatsapp" > </i>  +92 3178813001</p>
             <div class="social-icon">
               <a href="https://www.facebook.com/profile.php?id=100020444874116" target="_blank"><i class="fa-brands fa-facebook"></i></a>
               <a href="https://twitter.com/home?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -231,13 +225,15 @@
             <a href="img/my cv.jpg" download="" class="btn btn2">Downloard cv</a>
           </div>
           <div class="contect-right">
-            <form action="#">
-              <input type="text" name="name" placeholder="Enter your Name" required>
-              <input type="email" name="email" placeholder="Enter your Email" required>
-              <textarea name="massage" id="massage" cols="10" rows="6" placeholder="your massage"></textarea>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Enter your Name" required>
+              <input type="email" name="Email" placeholder="Enter your Email" required>
+              <textarea name="Massage" id="massage" cols="10" rows="6" placeholder="your massage"></textarea>
               <input type="submit" class="btn btn2">
-              <input type="reset" class="btn btn2">
+              <input type="reset" class="btn btn2"><br>
+              <span id="masg"></span>
             </form>
+            
           </div>
         </div>
       </div>
@@ -251,5 +247,24 @@
     </div>
 
     <script src="index.js"></script>
+    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw97cnbj6wYiu3WbXsQI8iB8ejC_RCR5ntL4tV4UAg0BDnNahao_jv4axVRUzj5RpxR0g/exec'
+  const form = document.forms['submit-to-google-sheet'];
+  const msg=document.getElementById("masg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Send Successfully";
+        setTimeout(function () {
+          msg.innerHTML="";
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
