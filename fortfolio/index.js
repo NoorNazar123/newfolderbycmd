@@ -22,6 +22,8 @@ function opentab(tabname) {
    for(elems of [tablinks ,tabcontents]){
       updateElem(elems,tabname)
    }
+
+   // ---------try another way---------
  
   // for(tabli of tablinks){
   //    if(tabli.id == tabname ){

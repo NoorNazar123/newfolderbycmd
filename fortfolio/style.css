@@ -144,6 +144,7 @@
       font-size: 3.80rem;
       font-weight: 37.5rem;
       color: #ffffff; 
+      
    }
    .tab-title{
       display: flex;
@@ -186,7 +187,7 @@
 
 /* --------------------------Services-------------------------------- */
 #services{
-   padding: 20px 60px;
+   padding: 30px 60px;
 }
 .services-list{
    display: grid;
@@ -228,13 +229,166 @@
 
 }
 
+/* -----------------portfolio--------------------- */
+#portfolio{
+   padding: 30px 60px;
+   margin-top: 60px;
+}
+.work-list{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap:40px;
+   margin-top: 50px;
+}
+.work{
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.work img{
+   width: 100%;
+   height: 450px;
+   display: block;
+   border-radius: 10px;
+   transition: transform 0.5s;
+}
+.layer{
+   width: 100%;
+   height: 0;
+   background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+   border-radius: 10px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 10px;
+   text-align:center;
+   transition: height 0.5s;
+}
+.layer h3{
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+.layer a{
+   margin: 20px;
+   color: #ff004f;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 60px;
+   background: #fff;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   text-align: center;
+}
+.work:hover img{
+   transform: scale(1.1);
+}
+.work:hover .layer{
+   height: 100%;
+}
+/* -------------------contect--------------------- */
+.contect-left{
+   flex-basis: 35%;
+   padding: 0px 60px;
+   margin-top: 60px;
+}
+.contect-right{
+   flex-basis: 60%;
+}
+.contect-left p{
+   font-size: 14px;
+}
+.contect-left p i{
+   margin: 15px 0px;
+   font-size: 20px;
+   color: #ff004f;
+}
+.social-icon a{
+   text-decoration: none;
+   font-size: 22px;
+   margin-right: 15px;
+   color: #ababab;
+   display: inline-block;
+   margin-top: 15px;
+   transition: transform 0.5s;
+}
+.social-icon a:hover{
+   color: #ff004f;
+   transform: translateY(-5px);
+}
+.btn{
+   display: block;
+   margin: 60px auto;
+   width: fit-content;
+   border: 1px solid #ff004f;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #fff;
+   transition: background 0.5s;
+}
+.btn.btn2{
+   display: inline-block;
+   background: #ff004f;
+}
 
+.btn:hover{
+   background: #fd4d84;
+}
+/* contect-right */
+.contect-right form{
+   width: 100%;
+   padding: 60px 80px;
+}
+form input, form textarea{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px 15px;
+   margin: 12px 0px;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+   padding: 14px 50px;
+   font-size: 18px;
+   margin: 10px 10px 5px 0px;
+   cursor: pointer;
 
+}
+.end-massage{
+   width: 100%;
+   text-align: center;
+   padding: 25px 0px;
+   background: #262626;
+   font-weight: 300;
+   margin-top: 20px;
+   font-size: 18px;
+}
+.end-massag, i{
+   color: #ff004f;
+   font-size: 20px;
+}
+/* ---------------End for now-------------------------- */
 
-   
-
-
+/* --------------------media quary--------------------- */
    @media (max-width:700px) {
+      .header{
+         background-image: url(img/myper.png);
+      }
+      .nav h1{
+        font-size: 30px;
+      }
+      .span_color{
+         font-size: 30px;
+      }
     .menu_bar{
       display: block;
       padding: 0rem 3rem;
@@ -263,10 +417,71 @@
      
     }
     .text_box{
-      margin-top: 17rem;
+      margin: 16rem 3rem 0rem 2rem;
+      font-size: 20px;
+      width: 70%;
     }
 
-    /* about sec */
+    /* ------------about sec------------ */
+   #about{
+      padding: 2rem 3rem;
+   }
+   .row{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      
+     
+   }
+   .about_col_1 img{
+      width: 100%;
+      margin-bottom: 3rem;
+   }
+   .about_col_2{
+      font-size: 0.80rem;
+
+   }
+   .sub-title{
+      font-size: 2.50rem;
+   }
+   .about_col_2{
+      width: 100%;
+   }
+
+   /* --------------services----------- */
+   #services{
+      padding: 0rem 3rem;
+   }
+   /* ------------portfolio------------ */
+   #portfolio{
+      padding: 0rem 3rem;  
+   }
+   /* ------------contect------------- */
+   .contect-left{
+      padding: 0px 3rem;
+      margin-top: 0px;
+   }
+
+   /* ---------------contect-right------- */
+.contect-right form{
+   padding: 3rem 3rem;
+}
+form .btn2{
+   padding: 14px 40px;
+   font-size: 15px;
+}
+.end-massage{
+   width: 100%;
+   padding: 15px 11px;
+   margin-top: 10px;
+   font-size: 15px;
+}
+.end-massag, i{
+   font-size: 10px;
+}
+ 
+
+  
 
     
       
