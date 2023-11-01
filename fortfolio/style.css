@@ -383,11 +383,11 @@ form .btn2{
       }
      
       .nav h1{
-        font-size: 30px;
+        font-size: 40px;
         margin-left: 3rem;
       }
       .span_color{
-         font-size: 30px;
+         font-size: 40px;
       }
     .menu_bar{
       display: block;
@@ -417,13 +417,14 @@ form .btn2{
      
     }
     .text_box{
-      margin: 21rem 3rem 0rem 2rem;
+      margin: 14rem 3rem 0rem 2rem;
       font-size: 20px;
       width: 70%;
       
     }
     .text_box h1{
-      color:#ababab; 
+      color:#ababab;
+      font-size: 2rem; 
 
     }
 
@@ -461,6 +462,9 @@ form .btn2{
    #portfolio{
       padding: 0rem 3rem;  
    }
+   .work img{
+      height: 350px;
+   }
    /* ------------contect------------- */
    .contect-left{
       padding: 0px 3rem;
@@ -476,8 +480,6 @@ form .btn2{
    font-size: 15px;
 }
 .end-massage{
-   width: 100%;
-   padding: 15px 11px;
    margin-top: 10px;
    font-size: 15px;
 }
